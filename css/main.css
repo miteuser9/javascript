@@ -1,0 +1,17 @@
+#si{
+    margin: 10% 0% 0% 10%;
+}
+#siform{
+    width: 50%;
+    border: 1px solid green;
+    height: 500px;
+    float: left;
+        
+}
+#sires{
+    width: 50%;
+    border: 1px solid green;
+    margin-left: 50%;
+    float:left;
+    height:500px;
+}
