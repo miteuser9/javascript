@@ -59,6 +59,66 @@ function fibonacci(){
     }
     showresult("Fibonocci series "+num+ " is " +output);  
 }
+function reverse(){
+    num=getUserInput();
+    num2=num;
+    var rev = 0;
+    while(num != 0){
+        r = num % 10;
+        rev =( rev * 10) + r;
+        num = num / 10;
+    }
+    showresult("Reverse of  "+num2+ " is " +rev);
+}
+function reverse(){
+    num=getUserInput();
+    num2=num;
+    var rev = 0;
+    while(num != 0){
+        r = parseInt(num % 10);
+        rev = rev * 10 + r;
+        num = parseInt(num / 10);
+    }
+    showresult("Reverse of  "+num2+ " is " +rev);
+}
+function palindrome(){
+    num=getUserInput();
+     num2 = num;
+    var rev = 0;
+    while(num != 0){
+        r = parseInt(num % 10);
+        rev = rev * 10 + r;
+        num = parseInt(num / 10);
+    }
+    if(num2==rev){
+       showresult("Palindrome"); 
+    }
+    else{
+        showresult("Not a Palindrome");
+    }
+}
+
+function sumofdigit(){
+    num=getUserInput();
+     num2 = num;
+      var sum=0;
+     while(num!=0){
+     sum += parseInt(num % 10);
+     num = parseInt(num / 10);
+     }
+    showresult("Sum of digit of "+num2+ " is " +sum); 
+ }
+
+ function sumgetsingledigit(){
+    num=getUserInput();
+     sum=num;
+     while(num>9){
+         sum = parseInt(num %10 + num / 10);
+         num = sum;
+     }
+     showresult("Sum of digit of is " +sum);
+ }
+
 
 
 function getUserInput(){
